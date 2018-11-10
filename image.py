@@ -6,7 +6,7 @@ myData = requests.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/
 json_dict = myData.json()
 #print(json_dict)
 
-#get the image from place "1"
+#get the image from first place holder
 roverImage = json_dict["photos"][0]["img_src"]
 print(roverImage)
 
